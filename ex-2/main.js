@@ -9,6 +9,9 @@ console.log("numero del computer: " + dadiComputer);
 
 if (dadiUtente > dadiComputer) {
   document.getElementById('my-id').innerHTML = "L'utente ha vinto";
-}else {
+}else if (dadiUtente = dadiComputer) {
+  document.getElementById('my-id').innerHTML = "I due numeri sono uguali";
+}
+else {
   document.getElementById('my-id').innerHTML = "Il computer ha vinto";
 }
