@@ -2,7 +2,7 @@
 
 // dichiaro larray con le mail
 var arrayMail = ["sasso.96@libero.it", "sasso.95@libero.it", "sasso.94@libero.it", "sasso.93@libero.it", "sasso.99@libero.it"];
-var test = 0;
+var test = false;
 
 // chiedo allutente la sua arrayMail
 mailUtente = prompt("inserisci la tua mail");
@@ -11,9 +11,9 @@ mailUtente = prompt("inserisci la tua mail");
 for (var i = 0; i < arrayMail.length; i++) {
   if (arrayMail[i] == mailUtente) {
     document.getElementById('my-id').innerHTML = "La tua mail  è compresa nella lista";
-    test = 1;
+    test = true;
   }
 }
-if(test == 0){
+if(!test){
   document.getElementById('my-id').innerHTML = "La tua mail non è compresa nella lista";
 }
